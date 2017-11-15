@@ -34,13 +34,8 @@ function fuzzyMatch(drivers, initial){
 
 
 //drivers  === [{name: Bobby, hometown:Pittsburgh},{name:Bobby,hometown:Tenafly}]
-function matchName(drivers, string){
-  let matchName = drivers.filter(function(driver){
-    for (const driver of drivers) {
-      if string === driver[name] {
-        return true
-        } else {
-        return false
-        }
-      }
-    })
+function matchName (drivers, name) {
+  return drivers.filter(function(driver) {
+    return driver.name.toLowerCase() === name.toLowerCase();
+  })
+}
