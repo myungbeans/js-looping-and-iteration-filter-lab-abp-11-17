@@ -46,3 +46,5 @@ function matchName(drivers, string){
       })
     return matchName
   }
+  return matchName;
+}
