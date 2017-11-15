@@ -34,9 +34,9 @@ function fuzzyMatch(drivers, initial){
 
 
 //drivers  === [{name: Bobby, hometown:Pittsburgh},{name:Bobby,hometown:Tenafly}]
-function matchName(drivers, name){
-  let matchName = drivers.filter(function(driver){
-    if (driver[name] === drivers[name]){
+function matchName(bigList, name){
+  let matchName = bigList.filter(function(driver, fName){
+    if (driver[fName] === driver[name]){
       return true
     } else {
       return false
