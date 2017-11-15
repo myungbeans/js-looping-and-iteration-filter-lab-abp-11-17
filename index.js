@@ -14,7 +14,7 @@
 
 function findMatching(drivers, string){
   let matchingDrivers = drivers.filter(function(driver){
-    if (name.toLowerCase() === driver.toLowerCase()){
+    if (string.toLowerCase() === driver.toLowerCase()){
       return true
     } else {
       return false
