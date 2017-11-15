@@ -10,8 +10,6 @@
   //return matchingDrivers;
 //}
 
-
-
 function findMatching(drivers, string){
   let matchingDrivers = drivers.filter(function(driver){
     if (string.toLowerCase() === driver.toLowerCase()){
