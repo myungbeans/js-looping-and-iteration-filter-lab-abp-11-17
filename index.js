@@ -12,6 +12,6 @@
 
 
 
-function findMatching(drivers, string{
+function findMatching(drivers, string){
   drivers.filter(function(drivers){return string === drivers.string})
-})
+}
