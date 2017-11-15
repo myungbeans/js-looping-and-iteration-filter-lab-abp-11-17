@@ -29,5 +29,5 @@ function fuzzymatch(drivers, initial){
       return false
     }
   })
-  return fuzzyMatch;
+  return fuzzyMatch
 }
