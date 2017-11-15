@@ -37,8 +37,8 @@ function fuzzyMatch(drivers, initial){
 function matchName(drivers, string){
   let matchName = drivers.filter(function(driver){
     for (const driver of drivers) {
-      if string === driver.name {
-        return true {
+      if string === driver[name] {
+        return true
         } else {
         return false
         }
