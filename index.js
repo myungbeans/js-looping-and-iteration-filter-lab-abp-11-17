@@ -22,12 +22,12 @@ function findMatching(drivers, string){
   }
 
 function fuzzymatch(drivers,letter){
-  let matchingDrivers = drivers.filter(function(driver){
+  let fuzzyMatch = drivers.filter(function(driver){
     if (letter.chartAt(0) === driver.chartAt(0)){
       return true
     } else {
       return false
     }
   })
-  return matchingDrivers;
+  return fuzzyMatch;
 }
