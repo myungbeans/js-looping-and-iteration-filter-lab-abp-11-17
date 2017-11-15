@@ -36,7 +36,7 @@ function fuzzyMatch(drivers, initial){
 //drivers  === [{name: Bobby, hometown:Pittsburgh},{name:Bobby,hometown:Tenafly}]
 function matchName(drivers, string){
   //matchName = filtered object[array{key:name}]
-  let matchName = drivers.filter(function unpack(driver, string){
+  let matchName = drivers.filter(function(driver, string){
     let unpackedList = driver.filter(function(drive){
       if string === drive[name] {
         return true
