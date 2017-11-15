@@ -31,3 +31,14 @@ function fuzzyMatch(drivers, initial){
   })
   return fuzzyMatch
 }
+
+function matchName(drivers, name){
+  let matchName = drivers.filter(function(driver){
+    if (driver[name] === name){
+      return true
+    } else {
+      return false
+    }
+  })
+  return matchName;
+}
