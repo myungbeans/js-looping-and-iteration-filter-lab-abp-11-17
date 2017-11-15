@@ -23,7 +23,7 @@ function findMatching(drivers, string){
 
 function fuzzymatch(drivers, initial){
   let fuzzyMatch = drivers.filter(function(driver){
-    if (initial.slice(0,2) === driver.slice(0,2)){
+    if (initial.charAt(0) === driver.charAt(0)){
       return true
     } else {
       return false
